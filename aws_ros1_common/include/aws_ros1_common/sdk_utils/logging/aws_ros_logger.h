@@ -44,6 +44,7 @@ protected:
   void LogWarn(const char * tag, const std::string & message) override;
   void LogError(const char * tag, const std::string & message) override;
   void LogFatal(const char * tag, const std::string & message) override;
+  void Flush() override;
 };
 
 }  // namespace Logging

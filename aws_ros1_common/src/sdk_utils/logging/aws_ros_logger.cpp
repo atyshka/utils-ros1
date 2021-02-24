@@ -53,6 +53,8 @@ void AWSROSLogger::LogFatal(const char * tag, const std::string & message)
   ROS_FATAL("[%s] %s", tag, message.c_str());
 }
 
+void AWSROSLogger::Flush() {}
+
 }  // namespace Logging
 }  // namespace Utils
 }  // namespace Aws
